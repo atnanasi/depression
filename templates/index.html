@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+
+	<!-- navbar -->
+	<div class="row">
+		<nav class="navbar navbar-default navbar-fixed-top">
+
+			<div class="navbar-header">
+				{% if title %}
+				<a href="/" class="navbar-brand">{{ title }} | kureha</a>
+			{% else %}
+				<a href="/" class="navbar-brand">kureha</a>
+			{% endif %}
+
+			</div>
+
+			<ul class="nav navbar-nav">
+				<li><a href="">about</a></li>
+				<li><a href="">menu2</a></li>
+				<li><a href="">menu3</a></li>
+				<li><a href="">menu4</a></li>
+			</ul>
+
+		</nav>
+	</div>
+
+	<!-- content -->
+	<div class="row" style="padding:4em 0 0 0">
+
+		<!-- side panel -->
+		<div class="col-md-3">
+			<div class="panel panel-default">
+				<div class="panel-heading">Menu</div>
+
+				<ul class="nav nav-pills nav-stacked">
+					<li><a href="/about"><i class="glyphicon glyphicon-chevron-right"></i> About</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- main -->
+		<div class="col-md-9">
+			<div class="page-header" style="margin-top:-1em;padding-bottom:0em;">
+				<h1><small>Senpai</small></h1>
+				<p>Automated remote application management & management Web-UI</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+{% endblock %}
